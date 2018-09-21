@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.3)  20 SEP 2018 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.8.3)  21 SEP 2018 20:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -896,7 +896,7 @@ Package rerunfilecheck Info: File `presentation_1.out' has not changed.
 Here is how much of TeX's memory you used:
  17135 strings out of 494903
  327828 string characters out of 6179962
- 394432 words of memory out of 5000000
+ 394433 words of memory out of 5000000
  20037 multiletter control sequences out of 15000+600000
  12301 words of font info for 45 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -911,7 +911,7 @@ ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb>
-Output written on presentation_1.pdf (13 pages, 134544 bytes).
+Output written on presentation_1.pdf (13 pages, 134926 bytes).
 PDF statistics:
  449 PDF objects out of 1000 (max. 8388607)
  402 compressed objects within 5 object streams
