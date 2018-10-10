@@ -1,0 +1,266 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ifce}
+\usepackage{csquotes}
+\usepackage[url,doi,style=numeric,backend=bibtex]{biblatex}
+\usepackage{longtable}
+% \usepackage{biblatex}
+\addbibresource{Referencias.bib}
+\newcommand{\aluno}{{\bf Marcelo F. de lima}\footnote{marcelodelima.m@gmail.com}}
+\newcommand{\prof}{{ Mo\'esio M. de Sales}\footnote{moesio@ifce.edu.br}}
+\newcommand{\titu}{Histórico Algebra de Booler}
+\newcommand{\subtitu}{}
+\newcommand{\disc}{Lógica Matemática}
+\newcommand{\curso}{Sistemas de Informação}
+\newcommand{\inst}{IFCE}
+\newcommand{\instr}{\today}
+%---------------------------------------------------------------------
+
+\begin{document}
+\Large
+\begin{center} \titu\\ \disc\\ \curso \\ \prof \\ \aluno \end{center}
+
+ 
+% \tableofcontents
+%-------------------------------------------------------------------------------------
+\vspace{0.9in}
+\vspace{0.9in}
+
+\begin{center}\textbf{Lógica Matemática}\end{center}
+\segundapagina
+
+\vspace{0.7in}
+\begin{footnotesize}
+{\normalsize \noindent \textbf{Resumo:}
+% Trabalho elaborado para obtenção de nota na disciplina de Lógica Matemática,sob orientação do
+% professor Moésio. 
+% Neste você deve ressaltar o objetivo, o método, os resultados e as conclusões do trabalho. A extensão deve estar entre 100 e 150 palavras. Deve ser composto de uma sequência de frases concisas, afirmativas, sem enumeração de tópicos. A primeira frase deve ser significativa, explicando o tema principal do documento. Os verbos devem estar na voz ativa e na terceira pessoa do singular. Não deve conter citações.
+%PALAVRAS-CHAVE}
+Nesta pesquisa apresenta-se um breve histórico e conceitos de Álgebra de Booler, contextualizada com aplicações nas áreas de Matemática e Ciência da Computação. Tendo em vista a vasta aplicabilidade desse conceitos na Matemática e, em especial, na Computação, torna-se pertinente e essencial a compreensão da Álgebra de Booleana para aqueles que desejam aventurar-se na Computação ou mesmo na Lógica Matemática. Dessa forma objetiva-se expor uma introdução ao conteúdo que cerca esses conceitos. Trata-se de um estudo exploratório descritivo, com uma investigação na literatura buscando identificar os principais autores que exploraram o tema e utilizaram desses em suas pesquisas. Portanto, conclui-se que com esta proposta o leitor pode tomar como base para uma iniciação ao tema, auxiliando a ter um visão breve e sucinta deste ramo do conhecimento.     
+% ferramentas de apoio à aprendizagem como fóruns, demandam habilidades de cruzamento
+% de informações sobre uma grande massa de dados, torna-se uma tarefa inviável para
+% operações humanas.
+
+\noindent\textbf{Palavras-chave:} Álgebra de Booler. Lógica Matemática. Computação.}
+\end{footnotesize}
+
+%--------------------------------------------------------------------------------------
+\segundapagina
+%-------------------------------------------------------------------------------------
+\tableofcontents
+
+\segundapagina
+\section{Introdução}
+
+  Por volta de 1847 foram publicados dois importantes trabalhos envolvendo o estudo de lógica, produzidos por matemáticos britânicos. Augustus De Morgan (1806–1871) apresenta seu trabalho demonstrando sua lógica formal compreendida como uma análise do raciocínio que depende da forma pela qual as inferências são formalizadas, e a investigação completa e regras para construir argumentos \cite{barnett2011origins}.
+  
+  O segundo trabalho publicado nesse período envolvendo lógica foi o artigo intitulado \textit{The Mathematical Analysis of Logic}, desenvolvido por George Boole (1815–1864). Semelhante a pesquisa de De Morgan, no estudo de Booler o mesmo procurou ampliar os conceitos da lógica tradicional criando um método para analisar todas as inferências logicamente válidas \cite{barnett2011origins}.
+  
+  Para \cite{strawson1950mathematical}, a teoria da lógica está intimamente ligada à teoria da linguagem, surgindo como uma tentativa bem sucedida para expressar proposições lógicas por meio de símbolos, cujas leis devem ser bem fundamentadas. O autor continua descrevendo que a partir destes princípios elementares, é possível alcançar uma expressão simbólica exata, concretizada com o rigor metódico e assim presume-se que o objetivo é atingido.   
+%   A primeira noção que um leitor pode formar da Lógica é visualizando-a como o exame daquela parte do raciocínio que depende da maneira pela qual as inferências são formadas, e a investigação de máximas gerais e regras para construir argumentos,
+%   
+%   A principal diferença entre a álgebra de Booler e a álgebra convencional é que na álgebra Booleana, constantes e variáveis podem ter apenas dois valores 0 ou 1.
+
+%   Este texto é um oferecimento de~\cite{lipschutz2004matematica,menezes2013matematica,gersting2017fundamentos,rosen2006discrete}
+% 
+% 	{\Teo[algoritmo de Dijkstra] O  caminho mais curto num grafo dirigido ou
+% não dirigido com arestas de peso não negativo, em tempo computacional $O([m+n]\log n)$ onde $m$  o número de arestas e $n$  o número de vrtices. } 
+
+
+\section{Histórico}
+
+Booler nasceu em Lincoln Inglaterra em 1815, Ele teve grande influência pelo gosto da aprendizagem que o seu pai passou para ele. Tendo nos seu estudos inicias predisposição para o estudo de línguas, ele aprendeu latim, grego, francês, italiano e alemão em grande parte estudando sozinho. Aos 17 anos, ele descobriu a matemática e começou ler livros de grandes matemáticos da época. Por ser de família humilde e por falta de credenciais acadêmicas formais Booler possou muito tempo sem obter um posto universitário. 
+
+Contudo, a sua condição social não limitou a sua produção, pois neste mesmo período, ele realizou uma pesquisa matemática enquanto trabalhava como professor. Em 1842, ele enviou uma correspondência para o matemático e lógico Augustus De Morgan, com o qual compartilhava pesquisas. No entanto, a essência de seu estudo foi construído de forma independente. Em 1844, ele foi condecorado com uma medalha da \textit{Royal Society} pela publicação de um artigo sobre novas técnicas em equações diferenciais.
+\vspace{0.9in}
+\section{Conceitos}
+
+A principal diferença entre a álgebra booleana e a convencional é que, na booleana, as constantes e variáveis podem ter apenas dois valores possíveis, 0 ou 1. As variáveis booleanas são muitas vezes usadas para representar o nível de tensão presente em uma conexão ou em terminais de entrada/saída de um circuito. Por exemplo, em um determinado sistema digital, o valor booleano 0 pode representar qualquer tensão dentro da faixa de 0 a 0,8 V, enquanto o valor ­booleano 1 pode representar qualquer tensão dentro da faixa de 2 a 5 V \cite{tocci2011sistemas}. Assim, a construção de uma sistema lógico digital a ser implementado a partir circuito torná-se menos complexo e menos susceptível a falhas, na tabela 1 é demonstrada uma relação conceitual entre os níveis lógicos 0 e 1.
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Níveis lógicos.}\\
+    \begin{tabular}{ |c|c|c|}   
+    \hline
+      \hline
+      Lógico 0 & Lógico 1 \\
+      \hline
+      Falso & Verdadeiro \\ 
+      Desligado & Ligado \\ 
+      Não & Sim \\
+      Fechado & Aberto \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+No que se refere a definições da álgebra booleana no livro \cite{tocci2011sistemas} os autores descrevem que a diferença entre a álgebra booleana e a convencional é que, na booleana, as constantes e literais podem ser constituídas por apenas dois valores, 0 ou 1. Nos circuítos digitais essas literais/variáveis são geralmente usadas para representar o nível de sinal/tensão presente em uma conexão ou em terminais de entrada/saída.
+
+Com esse princípio de manipular as variáveis com apenas dos valores, a álgebra boolean torna-se mais simples que álgebra convencional. Uma vez que, nela não existem frações, decimais, números negativos, raízes quadradas, raízes cúbicas, logaritmos, números imaginários, e assim por diante \cite{tocci2011sistemas}. De fato a Álgebra booleana possui apenas três operações OR (OU), AND (E) e NOT (NÃO). Como demonstrado na Figura: \ref{fig:fig_F2} relacionado a tabela com a sua porta lógica correspondente.
+
+\begin{figure}[h!]
+	\centering
+		\includegraphics[scale=0.2]{graph2.jpg}
+	\caption{\scriptsize Tabela-Verdade e Porta Lógica correspondente.}
+	\label{fig:fig_F2}
+	%\legend{\scriptsize Fonte: https://imgs.xkcd.com/comics/travelling\_salesman\_problem.png}
+\end{figure}
+
+Assim, nessa proposta são utilizadas tabelas também chamadas tabela-verdade Figura: \ref{fig:fig_F2} que a partir dessa tabelas são definidas as portas lógicas para cada operação como citado no parágrafo anterior.
+
+\vspace{0.9in}
+\vspace{0.2in}
+Na computação esse princípio representou um dos maiores avanços em termos de construção de hardware, tendo em vista que nos padrões anteriores existiam grandes dificuldades em definir níveis de tensão que assumissem valores fixos sem variações. Então, a lógica booleana se consolidou como um recurso de implementação de circuítos lógicos possibilitando a redução de tamanho do hardware chegando ao desenvolvimento dos processadores que fazem parte dos computadores e de praticamente todos os dispositivos eletrônicos hoje conhecidos .    
+
+
+%  \subsection{Equ}
+%   
+% \begin{eqnarray*}
+% 	  s^2 &=& \frac{1}{n-1}{\sum_{i=1}^n} (x_i - \overline{x})^2\\ 
+% 	      &=& \frac{1}{n-1}\left[\sum_{i=1}^{n}x_i^2-\frac{(\sum_{i=1}^{n}x_i)^2}{n} \right]
+% \end{eqnarray*}
+
+
+\section{Propriedades Principais}
+
+No mundo da matemática e da lógica, no entanto, pode-se desenvolver provas sem restar dúvida usando a indução onde infere-se uma caso general, não com base em alguns casos, mas em todos os casos possíveis.
+
+Para Booler, as operações da linguagem como instrumento de raciocínio, podem ser orientadas por um sistema de símbolos composto dos seguintes elementos:
+
+\begin{itemize}
+ \item Símbolos literais, como $x, y\ \&c$., representando as coisas como sujeitos de nossas concepções.
+ \item Sinais de operação, como $+, -, *,$ representando as operações pelas quais as concepções das coisas são combinadas ou solucionadas de modo a formar novas conceitos envolvendo os elementos.
+ \item O sinal de identidade, $=$.
+ \item E estes símbolos da lógica fazem parte dos objetos e seguem a leis definidas, em parte concordando com diferentes leis dos símbolos ligados a ciência da Álgebra.
+\end{itemize}
+%   {\exe 
+% 	Seja $A=\{a,b,c,d\}$ e seja $R$ uma relação sobre $A$ que tenha
+% 	como matriz:
+%   }
+%   \begin{eqnarray*}
+% 		 M =\begin{bmatrix}
+% 				1 & 0 & 0 & 0\\
+% 				0 & 1 & 0 & 0\\
+% 				1 & 1 & 1 & 0 \\
+% 				0 & 1 & 0 & 1 \\
+% 		 \end{bmatrix}
+%   \end{eqnarray*}
+% Construa o digrafo de $R$ e liste os graus de entrada e de saída dos vértices.
+% 
+% {\sol\label{exe:exe_1}
+% 	\begin{eqnarray*} R=\{(a,a),(b,b),(c,a),(c,b),(c,c),(d,b),(d,d)\} \end{eqnarray*}
+% 
+% 	A Figura \ref{fig:fig_F1} apresenta o digrafo da relação $R$.
+% 
+% 	\begin{figure}[ht]
+% 		\centering
+% 			\includegraphics[scale=0.3]{F1.png}
+% 			\caption{\scriptsize Digrafo do Exemplo~\ref{exe:exe_1}.}
+% 		\label{fig:fig_F1}
+% 	\end{figure}
+%   }
+
+  
+\section{Conclusão}
+
+Com suporte nos recursos didáticos e a partir do que foi explanado, espera-se que com esse relatórios sucinto ter dado uma visão geral da história da álgebra booleana. Como mencionado anteriormente, foram levantados alguns estudo, consequente não são suficiente para cobrir os diferentes assuntos que surgiram neste processo e no desenvolvimento do trabalho. Assim para um estudo mais detalhado sobre o assunto, faz-se necessário uma pesquisa mais profunda sobre o trabalho de Boole e complementando com o estudo de De Morgan. Contudo, acredita-se que como definida, e no que se prepôs essa pesquisa o objetivo tenha sido alcançado.  
+
+% \subsection{Pseudocodigos}
+% 
+% Pseudocódigo é uma forma genérica de escrever um algoritmo, utilizando uma linguagem simples (nativa
+% a quem o escreve, de forma a ser entendida por qualquer pessoa) sem necessidade de conhecer a
+% sintaxe de nenhuma linguagem de programação\cite{pseud:wiki}.
+% 		  \begin{algorithm}
+% 		  \caption{Valor Absoluto}
+% 					\begin{algorithmic}[1]
+% 						\Function{Absoluto}{x}
+% 							\If {$x < 0$}
+% 								\State \Return $-x$
+% 							\Else
+% 								\State \Return $x$
+% 							\EndIf
+% 						\EndFunction
+% 					\end{algorithmic}
+% 		  \end{algorithm}
+% 	
+% 		  \begin{algorithm}
+% 		  \caption{Exemplo do \texttt{for}}
+% 					\begin{algorithmic}[1]
+% 						\For{i}{1}{n}
+% 							  \State {$A[i] \gets i + 1$} \Comment{Preenche o vetor}
+% 						\EndFor
+% 					\end{algorithmic}
+% 		  \end{algorithm}
+% 	
+% 		  \begin{algorithm}
+% 		  \caption{Exemplo do \texttt{while}}
+% 				  \begin{algorithmic}[1]
+% 					  \While {$i \mei n$}
+% 						  \State $i \gets i + 1$
+% 					  \EndWhile
+% 				  \end{algorithmic}
+% 		  \end{algorithm}
+% 
+% 
+% \subsection{Códigos em C}
+% 
+% Exemplo de aplicação em $C$.
+% 	
+%   \begin{lstlisting}
+% 	#include
+% 	using namespace std;
+% 	int main()
+% 	{
+% 	  /* comentario */
+% 	  int n, i, a = 0, b = 1, F;
+% 	  cout << "Digite o numero de termos da sequencia de Fibonacci: ";
+% 	   cin >> n;
+% 	  cout << a << " " << b << " ";
+% 	   for (i = 0; i < n - 2; i++)   {
+% 	     F = a + b;
+% 	     cout << F << " ";
+% 	     a = b;
+% 	     b = F;
+% 	   } cout << endl; return 0;
+% 	 }
+% 	\end{lstlisting}
+% 
+% 
+% 
+% 
+% 	
+% \section{Ilustrações}
+% 
+% São imagens que ilustram ou elucidam um texto. Após a ilustração, na parte inferior, deve-se indicar a fonte consultada, ainda que seja uma produção do próprio autor. Após a indicação da fonte consultada podem ser inseridas as legendas, notas e outras informações necessárias à melhor compreensão da ilustração. A ilustração deve ser citada no texto e inserida o mais próximo possível do trecho a que se refere. 
+% 
+% 
+% \subsection{Exemplo de Ilustrações}
+% Recomenda-se centralizar a ilustração e ajustar o título à largura da mesma (Exemplo:
+% \autoref{fig:fig_F2}).
+% 
+% 
+% % \begin{figure}[ht]
+% % 	\centering
+% % 		\includegraphics[scale=0.2]{graph2.jpg}
+% % 	\caption{\scriptsize Tela inicial do aplicativo.}
+% % 	\label{fig:fig_F2}
+% % 	%\legend{\scriptsize Fonte: https://imgs.xkcd.com/comics/travelling\_salesman\_problem.png}
+% % \end{figure}
+
+
+
+% \section{Bibliografia}
+% 
+% As referências, de presença obrigatória, são o conjunto padronizado de elementos descritivos
+% retirados de um documento, que permite sua identificação individual. Este trabalho deve conter toda
+% a matéria bibliográfica citada sendo necessário, no mínimo {\sc Quatro referências}.
+
+%--------------------------------------------------------------------
+\printbibliography
+% \printbibliography
+% \section{Referênces}
+% \bibliographystyle{template-trabalho}
+% \bibliography{Refencias}
+% \bibliographystyle
+% \bibliography{template-trabalho}
+
+\end{document}

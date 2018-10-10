@@ -1,0 +1,128 @@
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{nccmath}
+\usepackage[brazil]{babel}  % Carrega a hifenização em português e também coloca os títulos de seções, data etc 
+%\usepackage{tabularx}
+\usepackage[T1]{fontenc}    % Seleção de códigos de fonte
+\usepackage[utf8]{inputenc} % Codificação do documento
+\usepackage{ae}
+\usepackage{indentfirst}    % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}        % Lista de símbolos
+\usepackage{color}          % Controle das cores
+%\usepackage{xcolor}        % controle de caixa coloridas
+%\usepackage{tcolorbox}     % controle de caixa coloridas
+%%%Espaçamento--paragrafos
+\usepackage{graphicx}       % Inclusão de gráficos
+\usepackage{microtype}      % Para melhorias de justificação
+\setlength{\parindent}{1.25cm}       % Parágrafo
+%================================================================================
+\usepackage{fancyheadings}
+\usepackage{pgfplotstable}
+\usepackage[pdftex]{hyperref}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.7}
+\graphicspath{{./Figuras/}}          % Imagnes na pasta "Figuras"
+%================================================================================
+\newtheorem{Prop}{Propriedade}[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{lema}{Lema}[section]
+\newtheorem{exe}{Exemplo}[section]
+\newtheorem{prov}{Prova}[section]
+\newtheorem{sol}{Solução}[section]
+%================================================================================
+\usepackage{pgfplotstable}
+\usepackage[top=4in,bottom=4in,right=1in,left=1in]{geometry} 
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{filecontents}
+%================================================================================
+% As margens
+\setlength{\textheight}{25.0cm}
+\setlength{\textwidth}{17.5cm}
+\setlength{\oddsidemargin}{2.0cm}
+\setlength{\evensidemargin}{2.0cm}
+\setlength{\topmargin}{1.5cm}
+\setlength{\headheight}{1.6cm}
+\setlength{\headsep}{1.0cm}
+\setlength{\columnsep}{1.5cm}
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+\addtolength{\topmargin}{-1.4in}
+\setlength{\footskip}{0.60cm}
+%==================================================================================
+\pagestyle{fancy}
+\lhead{\includegraphics[scale=1.5]{logo_ifce.png}}
+\rhead{\sc
+Instituto Federal de Educação,\\
+Ciência e Tecnologia\\
+Campus Crato}
+\cfoot{}
+%=================================================================================
+\fancyfoot[C]{\bfseries{-\thepage-}} %tudo q aparece abaixo do risco 
+\fancyfoot[L]{IFCE}
+\fancyfoot[R]{\today}
+\renewcommand{\headrulewidth}{0.5pt} % espessura do risco decima
+\renewcommand{\footrulewidth}{0.5pt}% espessura do risco de baixo
+\addtolength{\headheight}{0.5pt} % fazer espaço para o risco
+%=================================================================================
+\newcommand{\segundapagina}{
+\newpage
+\pagestyle{fancy}
+\fancyhf{} % apagar as configuraçoes actuais 
+\fancyhead[LE,RO]{\bfseries{\subtitu}}
+\fancyhead[LO]{\bfseries{\curso}}
+\fancyfoot[C]{\bfseries{-\thepage-}} %tudo q aparece abaixo do risco 
+\fancyfoot[L]{\inst}
+%\fancyfoot[R]{\today}
+\renewcommand{\headrulewidth}{0.5pt} % espessura do risco decima
+\renewcommand{\footrulewidth}{0.5pt}% espessura do risco de baixo
+\addtolength{\headheight}{0.5pt} % fazer espaço para o risco
+}
+%==================================================================================
+\usepackage{algpseudocode,algorithm}	% pseudo-codigo
+% Declaracoes
+\algrenewcommand\algorithmicend{\textbf{fim}}
+\algrenewcommand\algorithmicdo{\textbf{faça}}
+\algrenewcommand\algorithmicwhile{\textbf{enquanto}}
+\algrenewcommand\algorithmicfor{\textbf{para}}
+\algrenewcommand\algorithmicif{\textbf{se}}
+\algrenewcommand\algorithmicthen{\textbf{então}}
+\algrenewcommand\algorithmicelse{\textbf{senão}}
+\algrenewcommand\algorithmicreturn{\textbf{devolve}}
+\algrenewcommand\algorithmicfunction{\textbf{função}}
+
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+
+\algnewcommand\algorithmicto{\textbf{até}}
+\algrenewtext{For}[3]%
+{\algorithmicfor\ #1 $\gets$ #2 \algorithmicto\ #3 \algorithmicdo}
+
+% Novos comandos
+\newcommand{\mei}{\leqslant} 		% menor ou igual
+
+% Definindo novas cores
+\definecolor{verde}{rgb}{0,0.5,0}
+% Configurando layout para mostrar codigos C++
+\usepackage{listings}
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{verde},
+  commentstyle=\color{red},
+  extendedchars=true,
+  showspaces=false,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{green!10},
+  breakautoindent=true,
+  captionpos=b,
+  xleftmargin=0pt,
+}

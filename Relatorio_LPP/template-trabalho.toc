@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {brazil}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{4}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Hist\IeC {\'o}rico}{4}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Conceitos}{4}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Abstra\IeC {\c c}\IeC {\~a}o}{5}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Encapsulamento}{5}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Heran\IeC {\c c}a}{5}{subsection.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Polimorfismo}{5}{subsection.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Propriedades Principais}{5}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}C\IeC {\'o}digo em Python}{7}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclus\IeC {\~a}o}{7}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Bibliografia}{7}{section.6}

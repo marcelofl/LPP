@@ -1,0 +1,132 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{barnett2011origins}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BJH}{%
+         family={Barnett},
+         familyi={B\bibinitperiod},
+         given={Janet\bibnamedelima Heine},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJH1}
+    \strng{fullhash}{BJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{pages}{12}
+    \field{title}{Origins of Boolean algebra in the logic of classes: George
+  Boole, John Venn and CS Peirce}
+    \field{volume}{10}
+    \field{journaltitle}{AMC}
+    \field{year}{2011}
+  \endentry
+
+  \entry{gregg1998ones}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GJ}{%
+         family={Gregg},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \strng{namehash}{GJ1}
+    \strng{fullhash}{GJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{isbn}{9780780334267}
+    \field{series}{IEEE Press understanding science \& technology series}
+    \field{title}{Ones and zeros: understanding Boolean algebra, digital
+  circuits, and the logic of sets}
+    \field{year}{1998}
+  \endentry
+
+  \entry{strawson1950mathematical}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SP}{%
+         family={Strawson},
+         familyi={S\bibinitperiod},
+         given={PF},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SP1}
+    \strng{fullhash}{SP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{The Mathematical Analysis of Logic. By George Boole. Pp.
+  82.(Oxford: Basil Black well. 1948. Price 7s. 6d.)}
+    \field{year}{1950}
+  \endentry
+
+  \entry{tocci2011sistemas}{book}{}
+    \name{author}{4}{}{%
+      {{hash=TR}{%
+         family={Tocci},
+         familyi={T\bibinitperiod},
+         given={R.J.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WN}{%
+         family={Widmer},
+         familyi={W\bibinitperiod},
+         given={N.S.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Moss},
+         familyi={M\bibinitperiod},
+         given={G.L.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Martins},
+         familyi={M\bibinitperiod},
+         given={C.S.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PRENTICE HALL BRASIL}%
+    }
+    \strng{namehash}{TR+1}
+    \strng{fullhash}{TRWNMGMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{isbn}{9788576050957}
+    \field{title}{Sistemas digitais: princ{\'\i}pios e aplica{\c{c}}{\~o}es}
+    \verb{url}
+    \verb https://books.google.com.br/books?id=QgYxNAAACAAJ
+    \endverb
+    \field{year}{2011}
+  \endentry
+\enddatalist
+\endinput

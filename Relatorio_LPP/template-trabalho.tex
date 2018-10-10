@@ -1,0 +1,176 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{ifce}
+\usepackage{csquotes}
+\usepackage[url,doi,style=numeric,backend=bibtex]{biblatex}
+\usepackage{longtable}
+% \usepackage{biblatex}
+\addbibresource{Referencias.bib}
+\newcommand{\aluno}{{\bf Nascimento, F. L}
+\footnote{lucasnasm@gmail.com}}
+\newcommand{\prof}{{ Alexandre de  S\'a Carneiro Wanderley}\footnote{alexandre@ifce.edu.br}}
+\newcommand{\titu}{Programação Orientada A Objetos Com Python}
+\newcommand{\subtitu}{POO Com Python}
+\newcommand{\disc}{Linguagens e Paradigmas de Programação}
+\newcommand{\curso}{Sistemas de Informação}
+\newcommand{\inst}{IFCE}
+\newcommand{\instr}{\today}
+% \thispagestyle{empty}
+\usepackage{lipsum}
+% \lipsum[1-10]
+%---------------------------------------------------------------------
+
+\begin{document}
+\Large
+\begin{center} \titu\\ \disc\\ \curso \\ \prof \\ \aluno
+\end{center}
+
+\vspace{0.9in}
+\vspace{0.9in}
+\begin{center}\textbf{Programação Orientada a Objetos}\end{center}
+
+\newpage 
+\tableofcontents
+%-------------------------------------------------------------------------------------
+\vspace{0.9in}
+\vspace{0.9in}
+
+
+\segundapagina
+% 
+% \vspace{0.7in}
+\begin{footnotesize}{\normalsize \noindent \textbf{Resumo:}Nesta pesquisa apresenta-se um breve histórico, conceitos e exemplos de aplicações que seguem o paradigma de programação orientado a objetos. 
+Para tanto, objetiva-se investigar como o paradigma OO aplica-se a linguagem de 
+programação \textit{Python}, relacionando os conceitos desse paradigma com aplicações prática construídas utilizando-se \textit{Python}. 
+Trata-se de um estudo exploratório descritivo com um levantamento sobre o assunto na literatura, buscando identificar os principais autores que exploraram o tema e que utilizaram desses em suas pesquisas. Portanto, conclui-se (Em construção...)
+
+\noindent\textbf{Palavras-chave:} Paradigma. Programação. Python. Computação.}
+\end{footnotesize}
+% 
+% %--------------------------------------------------------------------------------------
+% \segundapagina
+% %-------------------------------------------------------------------------------------
+% \tableofcontents
+% 
+\segundapagina
+\section{Introdução}
+
+o crescimento do desenvolvimento de software e a exigência do mercado por aplicações cada vez mais complexas levou a uma expressiva necessidade por metodologias que possibilitassem abstrair e modularizar as estruturas dos programas existentes. Assim, pode-se destacar linguagens de programação que suportam orientação a objetos: Haskell, Java, C++, Python, PHP, Ruby, Pascal, entre outras.
+
+% \lipsum[1]
+
+\section{Histórico}
+
+Em 1967, Kristen Nygaard e Ole-Johan Dahl, do Centro Norueguês de Computação em Oslo, desenvolveram a linguagem Simula. Derivada do Algol, o Simula I e Simula 76 podem ser consideradas as primeiras linguagens a introduzir os primeiros conceitos de orientação a objetos. Em princípio eram usadas para realizar simulações do comportamento de partículas de gases.
+
+Os conceitos de objetos, classes e herança nesse estágio de desenvolvimento eram tratados não necessariamente da forma que que se conhece hoje, por exemplo, o conceito de herança surgiu no Simula 67, pois até então falava-se apenas em \textit{subclassing}.
+
+Em 1970, Alan Kay, Dan Ingalls e Adele Goldberg, do Centro de Pesquisa da Xerox, desenvolveram a linguagem totalmente orientada a objetos.
+
+Em 1979–1983, Bjarne Stroustrup, no laboratório da AT \& T, desenvolveu a linguagem de programação C++, uma evolução da linguagem C
+
+Smaltalk - muitos programadores da époco não se sentiam confortáveis em ultilizar um novo paradigma de programaç19ão.
+
+1983 C++, ObjetC, 86 objectpascal java c e objectivec.. gratúita e multiplataforma, "escrava uma vez execute em qualquer lugar."
+
+% 
+
+
+% \lipsum[1]
+
+\vspace{0.3in}
+
+\section{Conceitos}
+Neste capítulo tem-se uma abordagem sobre os principais conceitos que cerca a programação orientada a objetos , destacando princípios e características; um breve contexto histórico
+acerca da evolução das linguagens OO, com ênfase nas aplicações definidas em uma escala evolutiva das linguagens. Em seguida tem-se uma explanação sobre os pilares da programação orientada a objetos  uso de grafo aplicado à
+análise de relações sociais, no qual são abordados os conceitos que envolvem
+a teoria de grafo e sua aplicação na análise de relações sociais, mostrando as
+principais características e tecnologias empregadas e um estudo sobre os modelos
+de visualização de grafos. Ao final, são apresentadas pesquisas relacionadas ao
+presente estudo que abordam o uso de grafos com propósito de expor a interação
+entre os participantes de fórum, a partir de estratégias que se relacionam com a
+teoria dos grafos.
+\subsection{Abstração}
+A criação de uma classe abstrata em Python é bastante útil e serve para definir o esqueleto para uma subclasse. Contudo  esse conceito não é nativo do python e a sua implementação é melhor definida por meio da biblioteca ABC. Abaixo é apresentado uma simples e eficiente forma de uso do biblioteca padrão abc do Python 3.6. Cabe ser observado que esse módulo foi adicionado ao Python 2.6 definido na proposta: PEP 3119.
+
+\begin{lstlisting}
+    from abc import ABC, abstractmethod 
+ 
+        class AbstractOperation(ABC):
+ 
+            def __init__(self, operand_a, operand_b):
+                self.operand_a = operand_a
+                self.operand_b = operand_b
+                super(AbstractOperation, self).__init__()
+    
+            @abstractmethod
+            def execute(self):
+                pass
+	\end{lstlisting}
+
+Neste código pode ser observado 
+
+
+\subsection{Encapsulamento}
+\subsection{Herança}
+\subsection{Polimorfismo}
+
+
+
+\vspace{0.9in}
+\vspace{0.2in}
+
+\section{Propriedades Principais}
+
+
+\lipsum[1]
+
+\begin{itemize}
+ \item Símbolos literais, como $x, y\ \&c$., representando as coisas como sujeitos de nossas concepções.
+ \item Sinais de operação, como $+, -, *,$ representando as operações pelas quais as concepções das coisas são combinadas ou solucionadas de modo a formar novas conceitos envolvendo os elementos.
+ \item O sinal de identidade, $=$.
+ \item E estes símbolos da lógica fazem parte dos objetos e seguem a leis definidas, em parte concordando com diferentes leis dos símbolos ligados a ciência da Álgebra.
+\end{itemize}
+
+\newpage
+\subsection{Código em Python}
+
+Exemplo de aplicação em $Python$.
+\vspace{0.1in}
+	
+  \begin{lstlisting}
+    class Poupanca(Conta):
+        def __init__ (self ,numero):
+            super().__init__(numero)
+            self.__rendimento = 0.0
+
+        def consultar_rendimento(self):
+            return self.__rendimento
+
+        def gerar_rendimento(self,taxa):
+            self.__rendimento += super().consultar_saldo()*taxa/100
+    conta = Poupanca(1)
+    conta.creditar(200.0)
+    conta.gerar_rendimento(10)
+    print(conta.consultar_saldo())
+    print(conta.consultar_rendmento())
+	\end{lstlisting}
+
+
+\vspace{0.5in}
+%   
+\section{Conclusão}
+
+Com suporte nos recursos didáticos e a partir do que foi explanado, espera-se que com esse relatórios sucinto ter dado uma visão geral da história da álgebra booleana. Como mencionado anteriormente, foram levantados alguns estudo, consequente não são suficiente para cobrir os diferentes assuntos que surgiram neste processo e no desenvolvimento do trabalho. Assim para um estudo mais detalhado sobre o assunto, faz-se necessário uma pesquisa mais profunda sobre o trabalho de Boole e complementando com o estudo de De Morgan. Contudo, acredita-se que como definida, e no que se prepôs essa pesquisa o objetivo tenha sido alcançado.  
+% 
+
+\section{Bibliografia}
+%--------------------------------------
+\printbibliography
+% \printbibliography
+% \section{Referênces}
+% \bibliographystyle{template-trabalho}
+% \bibliography{Refencias}
+% \bibliographystyle
+% \bibliography{template-trabalho}
+
+\end{document}
