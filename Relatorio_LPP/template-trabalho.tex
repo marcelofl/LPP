@@ -105,18 +105,18 @@ A criação de uma classe abstrata é bastante útil e serve para definir o esqu
 % Como não há tipos declarados em Python, esse tipo de polimorfismo (é bom definir o que é polimirfismo!!!!) pode ser realizado sem a necessidade de uma classe base abstrata unificadora.
 
 \begin{lstlisting}
-    from abc import ABC, abstractmethod 
+ from abc import ABC, abstractmethod 
  
-        class AbstractOperation(ABC):
+ class AbstractOperation(ABC):
  
-            def __init__(self, operand_a, operand_b):
-                self.operand_a = operand_a
-                self.operand_b = operand_b
-                super(AbstractOperation, self).__init__()
+	def __init__(self, operand_a, operand_b):
+		self.operand_a = operand_a
+		self.operand_b = operand_b
+		super(AbstractOperation, self).__init__()
     
-            @abstractmethod
-            def execute(self):
-                pass
+	@abstractmethod
+	def execute(self):
+		pass
 	\end{lstlisting}
 	
 \vspace{0.9in}
@@ -152,9 +152,9 @@ métodos e atributos em vários lugares, mas sim em apenas um único lugar, já 
 Em Python existem dois tipos de modificadores de acesso para atributos e métodos: Público e Privado.
 Atributos ou métodos iniciados por dois sublinhados são privados e todas as outras formas são públicas.
 \begin{lstlisting}
-class Funcionario():
-def metodo(self,valor):
-self.__atributo=valor
+ class Funcionario():
+	def metodo(self,valor):
+		self.__atributo=valor
 
 \end{lstlisting} 
 
