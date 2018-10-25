@@ -17,116 +17,100 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
-  \entry{barnett2011origins}{article}{}
+  \entry{black2013object}{article}{}
     \name{author}{1}{}{%
-      {{hash=BJH}{%
-         family={Barnett},
+      {{hash=BAP}{%
+         family={Black},
          familyi={B\bibinitperiod},
-         given={Janet\bibnamedelima Heine},
-         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BJH1}
-    \strng{fullhash}{BJH1}
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BAP1}
+    \strng{fullhash}{BAP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{pages}{12}
-    \field{title}{Origins of Boolean algebra in the logic of classes: George
-  Boole, John Venn and CS Peirce}
-    \field{volume}{10}
-    \field{journaltitle}{AMC}
-    \field{year}{2011}
+    \field{pages}{3\bibrangedash 20}
+    \field{title}{Object-oriented programming: Some history, and challenges for
+  the next fifty years}
+    \field{volume}{231}
+    \field{journaltitle}{Information and Computation}
+    \field{year}{2013}
   \endentry
 
-  \entry{gregg1998ones}{book}{}
+  \entry{dierbach2012introduction}{book}{}
     \name{author}{1}{}{%
-      {{hash=GJ}{%
-         family={Gregg},
-         familyi={G\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {IEEE Press}%
-    }
-    \strng{namehash}{GJ1}
-    \strng{fullhash}{GJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{isbn}{9780780334267}
-    \field{series}{IEEE Press understanding science \& technology series}
-    \field{title}{Ones and zeros: understanding Boolean algebra, digital
-  circuits, and the logic of sets}
-    \field{year}{1998}
-  \endentry
-
-  \entry{strawson1950mathematical}{article}{}
-    \name{author}{1}{}{%
-      {{hash=SP}{%
-         family={Strawson},
-         familyi={S\bibinitperiod},
-         given={PF},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SP1}
-    \strng{fullhash}{SP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{The Mathematical Analysis of Logic. By George Boole. Pp.
-  82.(Oxford: Basil Black well. 1948. Price 7s. 6d.)}
-    \field{year}{1950}
-  \endentry
-
-  \entry{tocci2011sistemas}{book}{}
-    \name{author}{4}{}{%
-      {{hash=TR}{%
-         family={Tocci},
-         familyi={T\bibinitperiod},
-         given={R.J.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=WN}{%
-         family={Widmer},
-         familyi={W\bibinitperiod},
-         given={N.S.},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=MG}{%
-         family={Moss},
-         familyi={M\bibinitperiod},
-         given={G.L.},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=MC}{%
-         family={Martins},
-         familyi={M\bibinitperiod},
-         given={C.S.},
+      {{hash=DC}{%
+         family={Dierbach},
+         familyi={D\bibinitperiod},
+         given={Charles},
          giveni={C\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {PRENTICE HALL BRASIL}%
+      {Wiley Publishing}%
     }
-    \strng{namehash}{TR+1}
-    \strng{fullhash}{TRWNMGMC1}
+    \strng{namehash}{DC1}
+    \strng{fullhash}{DC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{isbn}{9788576050957}
-    \field{title}{Sistemas digitais: princ{\'\i}pios e aplica{\c{c}}{\~o}es}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Introduction to Computer Science Using Python: A
+  Computational Problem-Solving Focus}
+    \field{year}{2012}
+  \endentry
+
+  \entry{site:python}{online}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={Python},
+         familyi={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Python e Programação Orientada a Objeto}
     \verb{url}
-    \verb https://books.google.com.br/books?id=QgYxNAAACAAJ
+    \verb https://wiki.python.org.br/ProgramacaoOrientadaObjetoPython
     \endverb
-    \field{year}{2011}
+    \field{year}{2018}
+  \endentry
+
+  \entry{snyder1986encapsulation}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Snyder},
+         familyi={S\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {ACM}%
+    }
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{ACM Sigplan Notices}
+    \field{number}{11}
+    \field{pages}{38\bibrangedash 45}
+    \field{title}{Encapsulation and inheritance in object-oriented programming
+  languages}
+    \field{volume}{21}
+    \field{year}{1986}
   \endentry
 \enddatalist
 \endinput

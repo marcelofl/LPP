@@ -9,16 +9,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Abstra\IeC {\c c}\IeC {\~a}o}{5}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Encapsulamento}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Encapsulamento}{6}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Heran\IeC {\c c}a}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Heran\IeC {\c c}a}{6}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4}Polimorfismo}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Polimorfismo}{7}{subsection.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Propriedades Principais}{5}{section.4}
+\contentsline {subsection}{\numberline {3.5}C\IeC {\'o}digo em Python}{9}{subsection.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}C\IeC {\'o}digo em Python}{7}{subsection.4.1}
+\contentsline {section}{\numberline {4}Conclus\IeC {\~a}o}{9}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclus\IeC {\~a}o}{7}{section.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Bibliografia}{7}{section.6}
+\contentsline {section}{\numberline {5}Bibliografia}{9}{section.5}

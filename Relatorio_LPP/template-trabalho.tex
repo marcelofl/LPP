@@ -5,10 +5,16 @@
 \usepackage{longtable}
 % \usepackage{biblatex}
 \addbibresource{Referencias.bib}
-\newcommand{\aluno}{{\bf Nascimento, F. L}
-\footnote{lucasnasm@gmail.com}}
-\newcommand{\prof}{{ Alexandre de  S\'a Carneiro Wanderley}\footnote{alexandre@ifce.edu.br}}
-\newcommand{\titu}{Programação Orientada A Objetos Com Python}
+\newcommand{\aluno}{{\bf Caique Galdino de Lima}
+	\footnote{caiquegamer0@gmail.com}}
+\newcommand{\alunodois}{{\bf Francisco Lucas do Nascimento}
+	\footnote{lucasnasm@gmail.com}}
+\newcommand{\alunotres}{{\bf  Marcelo de Lima Freire}
+	\footnote{marcelodelima.m@gmail.com}}
+\newcommand{\alunoquatro}{{\bf Renan Gustavo Carvalho Menezes}
+	\footnote{renanzx@live.com}}
+\newcommand{\prof}{{ Alexandre de  S\'a Carneiro Wanderley}}
+\newcommand{\titu}{Programação Orientada a Objetos}
 \newcommand{\subtitu}{POO Com Python}
 \newcommand{\disc}{Linguagens e Paradigmas de Programação}
 \newcommand{\curso}{Sistemas de Informação}
@@ -16,17 +22,18 @@
 \newcommand{\instr}{\today}
 % \thispagestyle{empty}
 \usepackage{lipsum}
+\nocite{site:python}
 % \lipsum[1-10]
 %---------------------------------------------------------------------
 
 \begin{document}
 \Large
-\begin{center} \titu\\ \disc\\ \curso \\ \prof \\ \aluno
+\begin{center} \titu \\ \ \\ \disc\\ \curso \\ \prof \\ \ \\ \aluno \\ \alunodois \\ \alunotres \\ \alunoquatro
 \end{center}
 
 \vspace{0.9in}
 \vspace{0.9in}
-\begin{center}\textbf{Programação Orientada a Objetos}\end{center}
+\begin{center}\textbf{Programação Orientada a Objetos com Python }\end{center}
 
 \newpage 
 \tableofcontents
@@ -38,10 +45,10 @@
 \segundapagina
 % 
 % \vspace{0.7in}
-\begin{footnotesize}{\normalsize \noindent \textbf{Resumo:}Nesta pesquisa apresenta-se um breve histórico, conceitos e exemplos de aplicações que seguem o paradigma de programação orientado a objetos. 
-Para tanto, objetiva-se investigar como o paradigma OO aplica-se a linguagem de 
-programação \textit{Python}, relacionando os conceitos desse paradigma com aplicações prática construídas utilizando-se \textit{Python}. 
-Trata-se de um estudo exploratório descritivo com um levantamento sobre o assunto na literatura, buscando identificar os principais autores que exploraram o tema e que utilizaram desses em suas pesquisas. Portanto, conclui-se (Em construção...)
+\begin{footnotesize}{\normalsize \noindent \textbf{Resumo:}Nesta pesquisa, apresenta-se um breve histórico, conceitos e exemplos de aplicações que seguem o paradigma de programação orientado a objetos (OO). 
+Para tanto, objetiva-se investigar como o paradigma OO aplica-se à linguagem de 
+programação \textit{Python}, relacionando os conceitos desse paradigma com aplicações prática construídas com \textit{Python}. 
+Trata-se de um estudo exploratório descritivo, com um levantamento sobre o assunto na literatura, buscando identificar os principais autores que exploraram o tema, e realizar uma abordagem técnica sobre esse paradigma. 
 
 \noindent\textbf{Palavras-chave:} Paradigma. Programação. Python. Computação.}
 \end{footnotesize}
@@ -52,25 +59,26 @@ Trata-se de um estudo exploratório descritivo com um levantamento sobre o assun
 % \tableofcontents
 % 
 \segundapagina
+
 \section{Introdução}
 
-o crescimento do desenvolvimento de software e a exigência do mercado por aplicações cada vez mais complexas levou a uma expressiva necessidade por metodologias que possibilitassem abstrair e modularizar as estruturas dos programas existentes. Assim, pode-se destacar linguagens de programação que suportam orientação a objetos: Haskell, Java, C++, Python, PHP, Ruby, Pascal, entre outras.
+O crescente desenvolvimento de software e a exigência do mercado por aplicações cada vez mais complexas, levou a uma expressiva necessidade por metodologias que possibilitassem abstrair e modularizar as estruturas dos programas existentes. Assim, com base nessas necessidades, surge o paradigma de Orientado a Objetos focado em atender essas exigências. Dentre as linguagens que suportam o paradigma orientação a objetos, tem-se a linguagem Simula (marco inicial da Orientação a objetos), C++, Java, Python, PHP, Ruby, Pascal, etc.
 
 % \lipsum[1]
 
 \section{Histórico}
 
-Em 1967, Kristen Nygaard e Ole-Johan Dahl, do Centro Norueguês de Computação em Oslo, desenvolveram a linguagem Simula. Derivada do Algol, o Simula I e Simula 76 podem ser consideradas as primeiras linguagens a introduzir os primeiros conceitos de orientação a objetos. Em princípio eram usadas para realizar simulações do comportamento de partículas de gases.
+Em 1967, Kristen Nygaard e Ole-Johan Dahl, do Centro Norueguês de Computação, em Oslo, desenvolveram a linguagem Simula. Derivada do Algol, o Simula I e Simula 67 podem ser consideradas as primeiras linguagens a introduzir conceitos de orientação a objetos. Em princípio, eram usadas para realizar simulações do comportamento de partículas de gases.
 
-Os conceitos de objetos, classes e herança nesse estágio de desenvolvimento eram tratados não necessariamente da forma que que se conhece hoje, por exemplo, o conceito de herança surgiu no Simula 67, pois até então falava-se apenas em \textit{subclassing}.
+Os conceitos de objetos, classes e herança nesse estágio de desenvolvimento desse paradigma, eram tratados não necessariamente da forma que se conhece hoje, por exemplo, o conceito de herança surgiu no Simula 67, pois até então falava-se apenas em \textit{subclassing} \cite{black2013object}. Em 1970, Alan Kay, Dan Ingalls e Adele Goldberg, do Centro de Pesquisa da Xerox, desenvolveram a linguagem essa linguagem totalmente orientada a objetos.
 
-Em 1970, Alan Kay, Dan Ingalls e Adele Goldberg, do Centro de Pesquisa da Xerox, desenvolveram a linguagem totalmente orientada a objetos.
+Em 1979–1983, Bjarne Stroustrup, no laboratório da AT \& T, desenvolveu a linguagem de programação C++, uma evolução da linguagem C, passando a suportar o paradigma orientado a objetos.
 
-Em 1979–1983, Bjarne Stroustrup, no laboratório da AT \& T, desenvolveu a linguagem de programação C++, uma evolução da linguagem C
+A partir de 1983 com o C++, ObjetC, 86 objectpascal java c e objectivec surgem como linguagens com suporte a OO. Um \textit{slogan} que consolidou esse paradigma "escrava uma vez execute em qualquer lugar" proferido pela \textit{Sun MicroSystems} como uma forma para promover o Java. A partir desse período a POO passa a ganhar mais espaço nos ambientes de desenvolvimento tornando-se amplamente adotada por grupos desenvolvedores. 
 
-Smaltalk - muitos programadores da époco não se sentiam confortáveis em ultilizar um novo paradigma de programaç19ão.
+% A linguagem Smaltalk a partir de 1974 passou a incorporar interface gráfica no entanto, muitos programadores da época não se sentiam confortáveis em utilizar um novo paradigma de programação, mesmo com adoção de mais recurso a linguagem, sendo esse um dos motivos que levaram alguns anos para essa proposta passar a ser amplamente adotada. 
 
-1983 C++, ObjetC, 86 objectpascal java c e objectivec.. gratúita e multiplataforma, "escrava uma vez execute em qualquer lugar."
+ 
 
 % 
 
@@ -80,17 +88,21 @@ Smaltalk - muitos programadores da époco não se sentiam confortáveis em ultil
 \vspace{0.3in}
 
 \section{Conceitos}
-Neste capítulo tem-se uma abordagem sobre os principais conceitos que cerca a programação orientada a objetos , destacando princípios e características; um breve contexto histórico
-acerca da evolução das linguagens OO, com ênfase nas aplicações definidas em uma escala evolutiva das linguagens. Em seguida tem-se uma explanação sobre os pilares da programação orientada a objetos  uso de grafo aplicado à
-análise de relações sociais, no qual são abordados os conceitos que envolvem
-a teoria de grafo e sua aplicação na análise de relações sociais, mostrando as
-principais características e tecnologias empregadas e um estudo sobre os modelos
-de visualização de grafos. Ao final, são apresentadas pesquisas relacionadas ao
-presente estudo que abordam o uso de grafos com propósito de expor a interação
-entre os participantes de fórum, a partir de estratégias que se relacionam com a
-teoria dos grafos.
+Neste capítulo, tem-se uma abordagem sobre os principais conceitos e características, que cercam a programação orientada a objetos, juntamente com uma explanação sobre os pilares da programação orientada a objetos. Cabe ser colocado que, as definições serão exemplificadas com aplicações implementadas com a linguagem. Ao final serão apresentadas as conclusões desse trabalho.
+
 \subsection{Abstração}
-A criação de uma classe abstrata em Python é bastante útil e serve para definir o esqueleto para uma subclasse. Contudo  esse conceito não é nativo do python e a sua implementação é melhor definida por meio da biblioteca ABC. Abaixo é apresentado uma simples e eficiente forma de uso do biblioteca padrão abc do Python 3.6. Cabe ser observado que esse módulo foi adicionado ao Python 2.6 definido na proposta: PEP 3119.
+
+A abstração pode ser compreendida como a capacidade que uma linguagem tem de permitir ao desenvolvedor omitir detalhes da implementação que não tem relevância para o que ele está desenvolvendo. Ex: para um programador desenvolvem um sistema de cadastro de carros de uma concessionária (imagine se fosse necessário implementar todos os elementos que compõem um carro), muitas informações não serão relevantes constar no cadastro (e.g., quantos parafusos prendem o motor? qual o tamanho desses parafusos? que tipo de polímero é usado no plástico que reveste a direção?). Esses são detalhes importantes para o fabricante, mas não são tão importantes para o vendedor.
+
+Para usar um determinado objeto, não é necessário compreender todas as operações que este pode desempenhar ou mesmo como o objeto é representado \cite{snyder1986encapsulation}. Com isso, a linguagem que incorpora esse conceito tem que permitir ao programador olhar para o problema ou objeto real (e.g., carro) e abstrair do carro informações que não são relevantes para a finalidade da aplicação que ele está desenvolvendo. 
+
+Portanto, uma característica da abstração, é omitir, na linguagem, informações que não são relevantes para aquela operação. Com isso, a classe é modelada de acordo com a necessidade do negócio.
+
+A criação de uma classe abstrata é bastante útil e serve para definir o esqueleto para uma subclasse. Contudo, em Python, a implementação de classes abstratas são definidas por meio da biblioteca ABC. A seguir, é apresentada uma simples e eficiente forma de uso do biblioteca padrão abc do Python 3.6. Cabe ser observado que, esse módulo foi adicionado ao Python 2.6 definido na proposta: PEP 3119. Segue exemplo abaixo.
+
+% OBS \cite{goodrich2013data}
+% 
+% Como não há tipos declarados em Python, esse tipo de polimorfismo (é bom definir o que é polimirfismo!!!!) pode ser realizado sem a necessidade de uma classe base abstrata unificadora.
 
 \begin{lstlisting}
     from abc import ABC, abstractmethod 
@@ -106,30 +118,145 @@ A criação de uma classe abstrata em Python é bastante útil e serve para defi
             def execute(self):
                 pass
 	\end{lstlisting}
+	
+\vspace{0.9in}
 
-Neste código pode ser observado 
+A seguir é apresentado um exemplo mais detalhado envolvendo a passagem 
+
+ \begin{lstlisting}
+ from abc import ABC, abstractmethod
+     
+ class AbstragtClass(ABC): 
+	def __init__(self, value):
+		self.value = value
+         
+         
+ class Adulto(AbstractClass):         
+	def eat(self):
+		return "Ingerir comidas sólidas "+ str(self.value) + " vezes ao dia"
+ 
+ 
+ class Babies(AbstractClass):         
+	def eat(self):
+		return "Apenas leite "+ str(self.value) + " vezes ou mais ao dia"
+ 
+ \end{lstlisting}
 
 
 \subsection{Encapsulamento}
+Encapsulamento é a proteção dos atributos ou métodos de uma classe assim evitando 
+que dados específicos de uma aplicação possam ser acessados diretamente.
+
+Encapsular é fundamental para que seu sistema seja suscetível a mudanças: já que não é preciso mudar
+métodos e atributos em vários lugares, mas sim em apenas um único lugar, já que o código está encapsulado.
+Em Python existem dois tipos de modificadores de acesso para atributos e métodos: Público e Privado.
+Atributos ou métodos iniciados por dois sublinhados são privados e todas as outras formas são públicas.
+\begin{lstlisting}
+class Funcionario():
+def metodo(self,valor):
+self.__atributo=valor
+
+\end{lstlisting} 
+
+Uma maneira de ter acesso a esses atributos é utilizados métodos chamados de Getters e Setters.
+
+\begin{lstlisting}
+ class Funcionario():
+	def setMetodo(self,valor):
+		self.__atributo=valor
+
+	def getMetodo(self):
+		return self.__atributo
+\end{lstlisting}
+
 \subsection{Herança}
+Assim como as características biológicas são passadas dos pais para os filhotes no mundo
+animal, como por exemplo os dentes caninos do grupo dos canídeos, as classes em Python
+tem um comportamento semelhante, onde os atributos podem ser herdados de outras
+classes.
+Mas por que se faz necessário o uso de herança? imagine uma classe chamada funcionário
+repleta de atributos, centenas deles a serem definidos, como nome, matrícula, idade, sexo,
+salário, setor, etc. etc. Agora imagine que você precisa escrever várias classes semelhantes
+a essa(mesmos atributos). Para cada classe criada é necessário escrever cada atributo um
+por um. E se você esquecer algum? E se esquecer um método de alguma? E é aí que a
+herança entra em ação.
+Ao invés de escrever atributo por atributo em cada classe, você precisa apenas escrever
+uma classe e herdar os atributos para as classes semelhantes. Por exemplo, uma classe
+Funcionário tem todos os atributos padrão de um funcionário, então não preciso reescrever
+esses atributos em uma classe Secretária. Apenas herdar-los e escrever os atributos
+próprios dela, se preciso.
+Em Python quando uma classe tem seus atributos herdados por outras, essa é chamada de
+superclasse (ou "pai","mestre" ou "base"), as que herdam esses atributos são então
+chamadas de subclasses (ou "filha", ou "derivada"). Uma subclasse pode herdar os
+atributos herdados da sua superclasse. Confuso né? veja o exemplo abaixo.
+\begin{lstlisting}
+ class Funcionario:
+	atributos1....
+ class Supervisor(Funcionario):
+	atributos2.....
+ class Gerente(Supervisor):
+	atributos3.....
+\end{lstlisting}
+Quando queremos herdar de outra classe, utilizamos o parêntese para indicar a classe da
+qual estamos pegando os atributos, ou seja, a nossa superclasse. No exemplo acima a
+classe Supervisor herda atributos1 de Funcionario, e a classe Gerente herda atributos1 e
+atributos2 de Supervisor.
+Vimos que a herança pode “copiar” os atributos de uma classe para outra, mas não para por
+aí. Ela funciona com os métodos também, então todos os métodos da nossa superclasse
+serão herdados pelas subclasses dela e poderão ser utilizados sem nenhum problema. Por
+exemplo, uma subclasse chamada Fiat, pode herdar os métodos de sua superclasse
+ModeloCarro que tem os métodos ligar e acelerar.
+Para aprofundar mais seus conhecimentos sobre orientação a objetos em python, consulte
+o material de apoio do curso “Introdução a python” módulo B, por Josué Labaki e E. R.
+Woiski.
 \subsection{Polimorfismo}
+O polimorfismo é uma palavra que deriva do Grego que significa “algo que assume muitas formas”\cite{dierbach2012introduction}. Um dos principais objetivos da programação orientada à objetos é prover a reutilização de código, no Python, podemos chamar isso de herança e polimorfismo, onde através de uma classe filha, podemos herdar e sobrescrever métodos ou não
+de uma classe pai. Em outras palavras,
+o polimorfismo consiste na alteração do funcionamento interno de um método herdado de
+um objeto pai. No Python podemos utilizar essa técnica da seguinte forma
+\begin{lstlisting}
+ class Mamifero:
+	def som(self):
+		return "Emiti som"
+	
+	
+ class Homem(Mamifero):
+	def som(self):
+		return "oi"
+	
+	
+ class Cachorro(Mamifero):
+	def som(self):
+		return "Wuff! Wuff!"
+	
+	
+ class Gato(Mamifero):
+	def som(self):
+		return "Miauuu!"
+	
+	
+ mamifero = Mamifero()
+ print(mamifero.som())
+	
+	
+ homem = Homem()
+ print(homem.som())
+	
+ cachorro = Cachorro()
+ print(cachorro.som())
+	
+ gato = Gato()
+ print(gato.som())
+\end{lstlisting}
+
 
 
 
 \vspace{0.9in}
 \vspace{0.2in}
 
-\section{Propriedades Principais}
 
 
-\lipsum[1]
-
-\begin{itemize}
- \item Símbolos literais, como $x, y\ \&c$., representando as coisas como sujeitos de nossas concepções.
- \item Sinais de operação, como $+, -, *,$ representando as operações pelas quais as concepções das coisas são combinadas ou solucionadas de modo a formar novas conceitos envolvendo os elementos.
- \item O sinal de identidade, $=$.
- \item E estes símbolos da lógica fazem parte dos objetos e seguem a leis definidas, em parte concordando com diferentes leis dos símbolos ligados a ciência da Álgebra.
-\end{itemize}
 
 \newpage
 \subsection{Código em Python}
@@ -160,7 +287,7 @@ Exemplo de aplicação em $Python$.
 %   
 \section{Conclusão}
 
-Com suporte nos recursos didáticos e a partir do que foi explanado, espera-se que com esse relatórios sucinto ter dado uma visão geral da história da álgebra booleana. Como mencionado anteriormente, foram levantados alguns estudo, consequente não são suficiente para cobrir os diferentes assuntos que surgiram neste processo e no desenvolvimento do trabalho. Assim para um estudo mais detalhado sobre o assunto, faz-se necessário uma pesquisa mais profunda sobre o trabalho de Boole e complementando com o estudo de De Morgan. Contudo, acredita-se que como definida, e no que se prepôs essa pesquisa o objetivo tenha sido alcançado.  
+Com suporte nos recursos didáticos e a partir do que foi explanado, espera-se que com esse relatório sucinto ter dado uma visão geral da orientação a objetos na linguagem Python.  Assim para um estudo mais detalhado sobre o assunto, faz-se necessário uma pesquisa mais profunda na linguagem e nos conceitos da orientação a objetos. Contudo, acredita-se que como definido, tenhamos alcançado o objetivo de explanar esse paradigma.
 % 
 
 \section{Bibliografia}
